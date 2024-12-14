@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte-Sized Brain Fuel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/source-sans-pro/3.046/source-sans-3.min.css" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=atkinson-hyperlegible@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="header">
+        <div class="unsubscribe-link">
+            <a href="#" style="color: #7f8c8d; font-size: 0.8em; text-decoration: underline; display: inline-block; margin-top: 10px;">
+                Unsubscribe from Byte-Sized Brain Fuel
+            </a>
+        </div>
+        <h1>Byte-Sized Brain Fuel</h1>
+        <div class="date">{{ CURRENT_DATE }}</div>
+        <p>8 bits of information for today</p>
+		    <div class="social-links" role="navigation" aria-label="Social media links">
+		        <a href="https://twitter.com/yourusername" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+		        <a href="https://linkedin.com/in/yourusername" aria-label="Connect on LinkedIn"><i class="fab fa-linkedin"></i></a>
+		        <a href="https://github.com/yourusername" aria-label="Follow us on GitHub"><i class="fab fa-github"></i></a>
+		    </div>
+		    <div class="share-buttons" role="group" aria-label="Share this page">
+		        <a href="#" class="share-button" onclick="share('twitter')" aria-label="Share on Twitter">
+		            <i class="fab fa-twitter"></i> Tweet
+		        </a>
+		        <a href="#" class="share-button" onclick="share('linkedin')" aria-label="Share on LinkedIn">
+		            <i class="fab fa-linkedin"></i> Share
+		        </a>
+		    </div>
+    </div>
+
+    <main id="main-content">
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Intro</h2>
+            <span class="connector">|</span>
+            <span class="section-subject">A Quick Word from Matt</span>
+        </div>
+        <div class="content">
+          {{ INTRO_CONTENT }}
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Word of the Day</h2>
+            <span class="connector">|</span>
+            <span class="section-subject">{{ WORD_OF_THE_DAY }}</span>
+        </div>
+        <div class="content">
+            <!-- Format: <strong>Word</strong> [pronunciation] (part of speech): definition -->
+            {{ WORD_CONTENT }}
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Tech Tidbit</h2>
+            <span class="connector">|</span>
+            <span class="section-subject">{{ TECH_TIDBIT_TITLE }}</span>
+        </div>
+        <div class="content">
+            {{ TECH_TIDBIT_CONTENT }}
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Codesmith's Corner</h2>
+            <span class="connector">|</span>
+            <span class="section-subject">{{ CODE_SUBJECT }}</span>
+        </div>
+        <div class="content">
+            {{ CODESMITHS_CORNER_CONTENT }}
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Philosophy Fragment</h2>
+            <span class="connector">|</span>
+            <span class="section-subject">{{ PHILOSOPHY_FRAGMENT_SUBJECT }}</span>
+        </div>
+        <div class="content">
+            {{ PHILOSOPHY_FRAGMENT_CONTENT }}
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Theology Thought</h2>
+            <span class="connector">|</span>
+            <span class="section-subject">{{ THEOLOGY_THOUGHT_SUBJECT }}</span>
+        </div>
+        <div class="content">
+            {{ THEOLOGY_THOUGHT_CONTENT }}
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Science Snapshot</h2>
+            <span class="connector">|</span>
+            <span class="section-subject">{{ SCIENCE_SNAPSHOT_SUBJECT }}</span>
+        </div>
+        <div class="content">
+            {{ SCIENCE_SNAPSHOT_CONTENT }}
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Social Compass</h2>
+            <span class="connector">|</span>
+            <span class="section-subject">{{ SOCIAL_COMPASS_SUBJECT }}</span>
+        </div>
+        <div class="content">
+            {{ SOCIAL_COMPASS_CONTENT }}
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Daily Dose of Wisdom</h2>
+            <span class="connector">|</span>
+            <span class="section-subject">{{ DAILY_DOSE_OF_WISDOM_TITLE }}</span>
+        </div>
+        <div class="content">
+            {{ DAILY_DOSE_OF_WISDOM_CONTENT }}
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="unsubscribe-link">
+            <a href="#" style="color: #7f8c8d; font-size: 0.8em; text-decoration: underline; display: inline-block; margin-top: 10px;">
+                Unsubscribe from Byte-Sized Brain Fuel
+            </a>
+        </div>
+        <div class="social-links">
+            <a href="https://twitter.com/yourusername" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/yourusername" aria-label="Connect on LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yourusername" aria-label="Follow us on GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="share-buttons">
+            <a href="#" class="share-button" onclick="share('twitter')" aria-label="Share on Twitter">
+                <i class="fab fa-twitter"></i> Tweet
+            </a>
+            <a href="#" class="share-button" onclick="share('linkedin')" aria-label="Share on LinkedIn">
+                <i class="fab fa-linkedin"></i> Share
+            </a>
+        </div>
+        <p>Authored by Brain Fuel, {{ YEAR }}</p>
+        <p>Dedicated to the Public Domain via the <a href="https://creativecommons.org/publicdomain/zero/1.0">CC0 1.0 Universal Deed</a></p>
+    </footer>
+    <script>
+        function share(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            
+            const shareUrls = {
+                twitter: `https://twitter.com/intent/tweet?url=${url}&text=${title}`,
+                linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`
+            };
+            
+            window.open(shareUrls[platform], 'share-dialog', 'width=600,height=400');
+        }
+    </script>
+</body>
+</html>

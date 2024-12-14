@@ -1,0 +1,171 @@
+
+body {
+    padding: 10px;
+    font-family: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #2c3e50;
+    margin-bottom: 20px;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-weight: 700;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #7f8c8d;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section-header {
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e74c3c;
+}
+
+.section-title,
+.section-subject {
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+}
+
+.section-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.section-subject {
+    color: #666;
+}
+
+.connector {
+    display: inline-block;
+    margin: 0 8px;
+    color: #e74c3c;
+    font-weight: normal;
+}
+
+.content {
+    font-size: 1.1em;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    line-height: 1.62;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 2px solid #2c3e50;
+    color: #7f8c8d;
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+code {
+    background: #f8f9fa;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+:focus {
+    outline: 3px solid #4A90E2;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+    section {
+        border: 1px solid CanvasText;
+    }
+}
+
+/* New component styles */
+.subscribe-banner {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.social-links a {
+    color: #2c3e50;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #e74c3c;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.share-button {
+    padding: 8px 15px;
+    border-radius: 4px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background 0.3s;
+}
+
+.share-button:hover {
+    background: #34495e;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+}
