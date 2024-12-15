@@ -6,6 +6,8 @@
 - Tweet
 - LinkedIn
 - Site w/ Subscribe Link
+- Element for code snippet
+- Element for accentuated/inset quotation
 
 ### Unsubscription
 Rationale: I want people to feel free to say "no", and so I want the unsubscription process to be as easy as possible. I want to earn your subscription and if I don't, I don't want to clutter up your time with something you find useless.
